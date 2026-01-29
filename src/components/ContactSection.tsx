@@ -137,8 +137,13 @@ export function ContactSection() {
 
               {/* CV Download */}
               <Button size="lg" className="w-full" asChild>
-                <a href={`${import.meta.env.BASE_URL}cv/Hidde_Bouwman_CV.pdf`} download className="text-black">
-                  <Download className="w-5 h-5 mr-2 text-black" />
+                <a
+                  href={`${import.meta.env.BASE_URL}cv/Hidde_Bouwman_CV.pdf`}
+                  download
+                  className="text-black"
+                  style={{ color: "#000" }}
+                >
+                  <Download className="w-5 h-5 mr-2" style={{ color: "#000" }} />
                   Download mijn CV
                 </a>
               </Button>
