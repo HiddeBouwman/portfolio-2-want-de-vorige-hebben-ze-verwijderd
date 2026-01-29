@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // use a repo-relative base on production so GitHub Pages serves assets correctly
-  base: mode === "development" ? "/" : "/portfolio/",
+  base: mode === "development" ? "/" : "/portfolio-2-want-de-vorige-hebben-ze-verwijderd/",
   server: {
     host: "::",
     port: 8080,
