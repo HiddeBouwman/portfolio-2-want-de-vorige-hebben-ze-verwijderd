@@ -2,6 +2,7 @@ import { ExternalLink, Github, Users, User } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Reveal } from "@/components/ui/reveal";
 
 interface Project {
   title: string;
@@ -83,7 +84,7 @@ export function ProjectsSection() {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <Reveal className="text-center mb-16">
             <p className="text-primary font-medium mb-2">Portfolio</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Mijn <span className="text-gradient">Projecten</span>
@@ -92,15 +93,16 @@ export function ProjectsSection() {
               Een selectie van projecten waar ik aan heb gewerkt tijdens mijn
               opleiding.
             </p>
-          </div>
+          </Reveal>
 
           {/* Projects Grid */}
           <div className="grid gap-8">
             {projects.map((project, index) => (
-              <Card
-                key={project.title}
-                className="gradient-card shadow-card hover:shadow-glow transition-smooth overflow-hidden group"
-              >
+              <Reveal key={project.title} className="">
+                <Card
+                  key={project.title}
+                  className="gradient-card shadow-card hover:shadow-glow transition-smooth overflow-hidden group"
+                >
                 <CardContent className="p-0">
                   <div className="grid md:grid-cols-5 gap-0">
                     {/* Image */}
@@ -208,6 +210,7 @@ export function ProjectsSection() {
                   </div>
                 </CardContent>
               </Card>
+              </Reveal>
             ))}
           </div>
 

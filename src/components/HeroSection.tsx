@@ -1,5 +1,6 @@
 import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Reveal } from "@/components/ui/reveal";
 import heroBlob from "@/assets/hero-blob.png";
 
 export function HeroSection() {
@@ -28,32 +29,32 @@ export function HeroSection() {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Greeting */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-4 animate-slide-up">
+          <Reveal className="text-lg md:text-xl text-muted-foreground mb-4">
             👋 Hallo, ik ben
-          </p>
+          </Reveal>
 
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-up animation-delay-200">
+          <Reveal className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animation-delay-200">
             <span className="text-gradient">Hidde</span>
             <br />
             <span className="text-foreground">Bouwman</span>
-          </h1>
+          </Reveal>
 
           {/* Role */}
-          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 animate-slide-up animation-delay-400">
+          <Reveal className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 animation-delay-400">
             Full-Stack{" "}
             <span className="text-primary font-semibold">Web Developer</span>
-          </p>
+          </Reveal>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 animate-slide-up animation-delay-600">
+          <Reveal className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 animation-delay-600">
             HBO student Creative Media & Game Technologies op zoek naar een
             uitdagende stage waar ik mijn passie voor webdevelopment kan
             inzetten.
-          </p>
+          </Reveal>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up animation-delay-600">
+          <Reveal className="flex flex-col sm:flex-row items-center justify-center gap-4 animation-delay-600">
             <Button size="lg" className="group" asChild>
               <a href="#projects">
                 <span>Bekijk Projecten</span>
@@ -61,12 +62,12 @@ export function HeroSection() {
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="/cv/Hidde_Bouwman_CV.pdf" download>
+              <a href={`${import.meta.env.BASE_URL}cv/Hidde_Bouwman_CV.pdf`} download>
                 <Download className="mr-2 w-4 h-4" />
                 Download CV
               </a>
             </Button>
-          </div>
+          </Reveal>
         </div>
       </div>
 

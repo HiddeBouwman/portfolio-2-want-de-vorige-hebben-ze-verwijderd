@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { Reveal } from "@/components/ui/reveal";
 
 const contactInfo = [
   {
@@ -68,7 +69,7 @@ export function ContactSection() {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <Reveal className="text-center mb-16">
             <p className="text-primary font-medium mb-2">Contact</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Neem <span className="text-gradient">Contact</span> Op
@@ -76,10 +77,11 @@ export function ContactSection() {
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
               Interesse in samenwerking of heb je vragen? Neem gerust contact op!
             </p>
-          </div>
+          </Reveal>
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
+            <Reveal className="space-y-6">
             <div className="space-y-6">
               <div className="space-y-4">
                 {contactInfo.map((item) => (
@@ -135,14 +137,16 @@ export function ContactSection() {
 
               {/* CV Download */}
               <Button size="lg" className="w-full" asChild>
-                <a href="/cv/Hidde_Bouwman_CV.pdf" download>
+                <a href={`${import.meta.env.BASE_URL}cv/Hidde_Bouwman_CV.pdf`} download>
                   <Download className="w-5 h-5 mr-2" />
                   Download mijn CV
                 </a>
               </Button>
             </div>
+            </Reveal>
 
             {/* Contact Form */}
+            <Reveal className="">
             <Card className="gradient-card shadow-card">
               <CardContent className="p-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -197,6 +201,7 @@ export function ContactSection() {
                 </form>
               </CardContent>
             </Card>
+            </Reveal>
           </div>
         </div>
       </div>

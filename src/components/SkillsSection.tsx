@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Reveal } from "@/components/ui/reveal";
 
 const skillCategories = [
   {
@@ -29,20 +30,21 @@ export function SkillsSection() {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <Reveal className="text-center mb-16">
             <p className="text-primary font-medium mb-2">Vaardigheden</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Mijn <span className="text-gradient">Skills</span>
             </h2>
-          </div>
+          </Reveal>
 
           {/* Skills Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {skillCategories.map((category, categoryIndex) => (
-              <Card
-                key={category.title}
-                className="gradient-card shadow-card hover:shadow-glow transition-smooth overflow-hidden group"
-              >
+              <Reveal key={category.title} className="">
+                <Card
+                  key={category.title}
+                  className="gradient-card shadow-card hover:shadow-glow transition-smooth overflow-hidden group"
+                >
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                     <span
@@ -79,6 +81,7 @@ export function SkillsSection() {
                   </div>
                 </CardContent>
               </Card>
+              </Reveal>
             ))}
           </div>
 
@@ -101,7 +104,7 @@ export function SkillsSection() {
                   <div className="text-left">
                     <p className="font-semibold">Engels</p>
                     <p className="text-sm text-muted-foreground">
-                      Vloeiend (B2)
+                      Stabiel genoeg (B1)
                     </p>
                   </div>
                 </div>

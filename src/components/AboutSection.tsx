@@ -1,5 +1,6 @@
 import { MapPin, GraduationCap, Globe } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Reveal } from "@/components/ui/reveal";
 
 export function AboutSection() {
   const highlights = [
@@ -25,14 +26,15 @@ export function AboutSection() {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <Reveal className="text-center mb-16">
             <p className="text-primary font-medium mb-2">Over mij</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Wie is <span className="text-gradient">Hidde</span>?
             </h2>
-          </div>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            <Reveal className="space-y-6">
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -51,8 +53,10 @@ export function AboutSection() {
                 hobby's helpen mij creatief en scherp te blijven.
               </p>
             </div>
+            </Reveal>
 
             {/* Highlight Cards */}
+            <Reveal className="space-y-4">
             <div className="space-y-4">
               {highlights.map((item, index) => (
                 <Card
@@ -74,6 +78,7 @@ export function AboutSection() {
                 </Card>
               ))}
             </div>
+            </Reveal>
           </div>
         </div>
       </div>
