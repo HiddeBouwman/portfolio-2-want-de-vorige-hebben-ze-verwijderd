@@ -6,6 +6,10 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   // use a repo-relative base on production so GitHub Pages serves assets correctly
   base: mode === "development" ? "/" : "/portfolio-2-want-de-vorige-hebben-ze-verwijderd/",
+  // output to `docs` when building for production so Pages can serve from `main/docs`
+  build: {
+    outDir: mode === "development" ? "dist" : "docs",
+  },
   server: {
     host: "::",
     port: 8080,
