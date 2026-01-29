@@ -3,7 +3,7 @@ import { Reveal } from "@/components/ui/reveal";
 
 const skillCategories = [
   {
-    title: "Talen",
+    title: "Programmeertalen",
     color: "primary",
     skills: ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
   },
@@ -20,7 +20,7 @@ const skillCategories = [
   {
     title: "Soft Skills",
     color: "primary",
-    skills: ["Teamwork", "Probleemoplossend", "Communicatie", "Leergierig"],
+    skills: ["Teamwork", "Probleemoplossend", "Communicatie", "Creatief Denken"],
   },
 ];
 
@@ -31,9 +31,9 @@ export function SkillsSection() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <Reveal className="text-center mb-16">
-            <p className="text-primary font-medium mb-2">Vaardigheden</p>
+            <p className="text-primary font-medium mb-2">Skills</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Mijn <span className="text-gradient">Skills</span>
+              Mijn <span className="text-gradient">Vaardigheden</span>
             </h2>
           </Reveal>
 
@@ -94,7 +94,7 @@ export function SkillsSection() {
                   <div className="text-left">
                     <p className="font-semibold">Nederlands</p>
                     <p className="text-sm text-muted-foreground">
-                      Native (C2)
+                      Moedertaal (C2)
                     </p>
                   </div>
                 </div>
@@ -104,8 +104,8 @@ export function SkillsSection() {
                   <div className="text-left">
                     <p className="font-semibold">Engels</p>
                     <p className="text-sm text-muted-foreground">
-                      Stabiel genoeg (B1)
-                    </p>
+                      Goed genoeg (B1)
+                      </p>
                   </div>
                 </div>
               </CardContent>

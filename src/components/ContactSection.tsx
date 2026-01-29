@@ -144,64 +144,6 @@ export function ContactSection() {
               </Button>
             </div>
             </Reveal>
-
-            {/* Contact Form */}
-            <Reveal className="">
-            <Card className="gradient-card shadow-card">
-              <CardContent className="p-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
-                      Naam
-                    </label>
-                    <Input
-                      id="name"
-                      placeholder="Je naam"
-                      value={formData.name}
-                      onChange={(e) =>
-                        setFormData({ ...formData, name: e.target.value })
-                      }
-                      required
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="je@email.com"
-                      value={formData.email}
-                      onChange={(e) =>
-                        setFormData({ ...formData, email: e.target.value })
-                      }
-                      required
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      Bericht
-                    </label>
-                    <Textarea
-                      id="message"
-                      placeholder="Je bericht..."
-                      rows={5}
-                      value={formData.message}
-                      onChange={(e) =>
-                        setFormData({ ...formData, message: e.target.value })
-                      }
-                      required
-                    />
-                  </div>
-                  <Button type="submit" size="lg" className="w-full">
-                    <Send className="w-4 h-4 mr-2" />
-                    Verstuur Bericht
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-            </Reveal>
           </div>
         </div>
       </div>

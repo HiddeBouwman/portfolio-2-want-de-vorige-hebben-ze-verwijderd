@@ -30,7 +30,7 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto">
           {/* Greeting */}
           <Reveal className="text-lg md:text-xl text-muted-foreground mb-4">
-            👋 Hallo, ik ben
+            Hoi! Ik ben
           </Reveal>
 
           {/* Name */}
@@ -48,17 +48,15 @@ export function HeroSection() {
 
           {/* Description */}
           <Reveal className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 animation-delay-600">
-            HBO student Creative Media & Game Technologies op zoek naar een
-            uitdagende stage waar ik mijn passie voor webdevelopment kan
-            inzetten.
+            HBO student Creative Media & Game Technologies met passie voor webdevelopment.
           </Reveal>
 
           {/* CTA Buttons */}
           <Reveal className="flex flex-col sm:flex-row items-center justify-center gap-4 animation-delay-600">
             <Button size="lg" className="group" asChild>
               <a href="#projects">
-                <span>Bekijk Projecten</span>
-                <ArrowDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                <span className="text-foreground">Bekijk Projecten</span>
+                <ArrowDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform text-black" />
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
@@ -72,7 +70,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 inset-x-0 flex justify-center animate-bounce">
         <a
           href="#about"
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-smooth"

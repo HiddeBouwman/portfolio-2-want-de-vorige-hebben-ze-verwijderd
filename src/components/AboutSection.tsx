@@ -17,7 +17,7 @@ export function AboutSection() {
     {
       icon: MapPin,
       title: "Locatie",
-      description: "Alphen aan den Rijn, Nederland",
+      description: "Alphen aan den Rijn, Nederland.",
     },
   ];
 
@@ -29,7 +29,7 @@ export function AboutSection() {
           <Reveal className="text-center mb-16">
             <p className="text-primary font-medium mb-2">Over mij</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Wie is <span className="text-gradient">Hidde</span>?
+              Wie ben <span className="text-gradient">ik</span>?
             </h2>
           </Reveal>
 
@@ -38,10 +38,7 @@ export function AboutSection() {
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Ik ben een enthousiaste HBO-student met een passie voor het
-                bouwen van moderne, gebruiksvriendelijke webapplicaties. Met
-                ervaring in zowel frontend als backend development, ben ik altijd
-                op zoek naar nieuwe uitdagingen.
+                Ik ben een HBO-student met een passie voor het bouwen van moderne, gebruiksvriendelijke webapplicaties.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Tijdens mijn opleiding heb ik gewerkt met diverse technologieën
@@ -49,8 +46,7 @@ export function AboutSection() {
                 opgedaan met UX/UI design in tools als Figma.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Naast programmeren houd ik van sporten, koken en reizen. Deze
-                hobby's helpen mij creatief en scherp te blijven.
+                Naast programmeren houd ik van sporten, eten koken, eten eten en reizen.
               </p>
             </div>
             </Reveal>

@@ -17,18 +17,18 @@
     --popover-foreground: 240 10% 10%;
 
     /* Primary green */
-    --primary: 150 95% 45%;
+    --primary: 135 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     /* Teal/secondary green */
-    --secondary: 165 65% 45%;
+    --secondary: 200 100% 50%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 15% 92%;
     --muted-foreground: 220 10% 45%;
 
     /* Green accent */
-    --accent: 125 70% 44%;
+    --accent: 130 70% 44%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -297,5 +297,30 @@
 
   .reveal.show {
     animation: slide-up 0.3s ease-out forwards;
+  }
+  
+  /* Icon hover utilities — apply these to the container you want to affect */
+  .icon-hover-black svg,
+  .icon-hover-black > svg {
+    transition: color 0.2s var(--transition-smooth), fill 0.2s var(--transition-smooth), stroke 0.2s var(--transition-smooth);
+  }
+
+  .icon-hover-black:hover svg,
+  .icon-hover-black:hover > svg {
+    color: #000;
+    fill: #000;
+    stroke: #000;
+  }
+
+  .icon-hover-foreground svg,
+  .icon-hover-foreground > svg {
+    transition: color 0.2s var(--transition-smooth), fill 0.2s var(--transition-smooth), stroke 0.2s var(--transition-smooth);
+  }
+
+  .icon-hover-foreground:hover svg,
+  .icon-hover-foreground:hover > svg {
+    color: hsl(var(--foreground));
+    fill: hsl(var(--foreground));
+    stroke: hsl(var(--foreground));
   }
 }

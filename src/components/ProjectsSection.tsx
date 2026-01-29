@@ -21,61 +21,18 @@ const projects: Project[] = [
   {
     title: "TLE2 - Team Project",
     description:
-      "Een collaboratief teamproject waarbij we een complete webapplicatie hebben gebouwd met PHP.",
+      "Een collaboratief teamproject waarbij we een complete webapplicatie hebben gebouwd met Laravel, in opdracht voor Natuurmonumenten en IO Digital.",
     problem:
       "Het bouwen van een schaalbare applicatie in teamverband met proper version control.",
-    target: "Medestudenten en docenten als eindgebruikers.",
+    target: "Jongvolwassenen die we geïnteresseerd willen maken in natuur.",
     technologies: ["PHP", "MySQL", "CSS", "Git"],
     role: "team",
     learnings:
-      "Samenwerken in een team, Git workflows, en het opzetten van een gestructureerd project.",
+      "Git workflows, het gebruiken van een framework met een team.",
     github: "https://github.com/HiddeBouwman/TLE2",
     image:
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
-  },
-  {
-    title: "Het Digitale Kookboek",
-    description:
-      "Een interactieve webapplicatie voor het opslaan en bekijken van recepten.",
-    problem:
-      "Recepten overzichtelijk digitaal bewaren en makkelijk terugvinden.",
-    target: "Thuiskoks die hun favoriete recepten willen organiseren.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    role: "solo",
-    learnings:
-      "Frontend development basics, responsive design en data structureren.",
-    github: "https://github.com/HiddeBouwman/Het_digitale_kookboek",
-    image:
-      "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&q=80",
-  },
-  {
-    title: "Kleding Site",
-    description:
-      "Een productcatalogus voor kleding met moderne styling en navigatie.",
-    problem: "Een visueel aantrekkelijke e-commerce ervaring creëren.",
-    target: "Online shoppers op zoek naar kleding.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    role: "solo",
-    learnings:
-      "E-commerce UI patterns, product presentatie en gebruikerservaring.",
-    github: "https://github.com/HiddeBouwman/Kleding_Site",
-    image:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
-  },
-  {
-    title: "Front-end Development",
-    description:
-      "Een verzameling van frontend projecten en experimenten met moderne CSS technieken.",
-    problem: "Experimenteren met geavanceerde CSS en animaties.",
-    target: "Portfolio showcase en leerproces documenteren.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    role: "solo",
-    learnings:
-      "Geavanceerde CSS technieken, animaties en responsive layouts.",
-    github: "https://github.com/HiddeBouwman/Front-end-Development",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-  },
+  }
 ];
 
 export function ProjectsSection() {

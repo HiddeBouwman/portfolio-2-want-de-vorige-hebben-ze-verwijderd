@@ -14,8 +14,7 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Hidde Bouwman. Gemaakt met{" "}
-            <Heart className="w-4 h-4 text-secondary fill-secondary" />
+            © {currentYear} Hidde Bouwman
           </p>
 
           {/* Social Links */}
