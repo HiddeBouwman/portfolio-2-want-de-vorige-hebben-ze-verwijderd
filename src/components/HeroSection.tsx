@@ -37,7 +37,7 @@ export function HeroSection() {
           <Reveal className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animation-delay-200">
             <span className="text-gradient">Hidde</span>
             <br />
-            <span className="text-foreground">Bouwman</span>
+            <span className="text-gradient">Bouwman</span>
           </Reveal>
 
           {/* Role */}
