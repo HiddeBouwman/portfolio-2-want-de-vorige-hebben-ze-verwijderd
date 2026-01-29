@@ -79,7 +79,7 @@ export function ContactSection() {
             </p>
           </Reveal>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid gap-12">
             {/* Contact Info */}
             <Reveal className="space-y-6">
             <div className="space-y-6">
