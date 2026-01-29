@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hidde Bouwman Portfolio - Vibrant Creative Design System */
+
+@layer base {
+  :root {
+    /* Core palette - Vibrant gradients inspired by reference */
+    --background: 0 0% 98%;
+    --foreground: 240 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
+
+    /* Vibrant electric blue primary */
+    --primary: 220 95% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm coral accent */
+    --secondary: 340 85% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Electric purple accent */
+    --accent: 280 90% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 95% 55%;
+
+    --radius: 1rem;
+
+    /* Custom vibrant colors */
+    --coral: 340 85% 60%;
+    --electric-blue: 220 95% 55%;
+    --purple: 280 90% 60%;
+    --mint: 160 70% 50%;
+    --gold: 45 95% 55%;
+    --cyan: 185 90% 50%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, 
+      hsl(280 90% 60% / 0.8) 0%, 
+      hsl(340 85% 60% / 0.6) 30%, 
+      hsl(45 95% 55% / 0.5) 60%, 
+      hsl(220 95% 55% / 0.7) 100%);
+    
+    --gradient-blob: radial-gradient(circle at 30% 50%, 
+      hsl(340 85% 60% / 0.4) 0%, 
+      hsl(280 90% 60% / 0.3) 40%, 
+      transparent 70%);
+
+    --gradient-card: linear-gradient(145deg, 
+      hsl(0 0% 100%) 0%, 
+      hsl(220 15% 96%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(220 95% 55% / 0.15);
+    --shadow-glow: 0 0 40px hsl(280 90% 60% / 0.2);
+    --shadow-card: 0 10px 40px -10px hsl(220 10% 10% / 0.12);
+
+    /* Animation */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 220 95% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 340 85% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 10% 18%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 280 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 220 95% 60%;
+
+    --gradient-hero: linear-gradient(135deg, 
+      hsl(280 90% 45% / 0.6) 0%, 
+      hsl(340 85% 45% / 0.5) 30%, 
+      hsl(45 95% 45% / 0.4) 60%, 
+      hsl(220 95% 50% / 0.6) 100%);
+    
+    --gradient-blob: radial-gradient(circle at 30% 50%, 
+      hsl(340 85% 45% / 0.3) 0%, 
+      hsl(280 90% 50% / 0.25) 40%, 
+      transparent 70%);
+
+    --gradient-card: linear-gradient(145deg, 
+      hsl(240 10% 12%) 0%, 
+      hsl(240 10% 8%) 100%);
+
+    --shadow-soft: 0 4px 20px -4px hsl(220 95% 60% / 0.2);
+    --shadow-glow: 0 0 40px hsl(280 90% 55% / 0.3);
+    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.3);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-blob {
+    background: var(--gradient-blob);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(var(--secondary)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .blob-shape {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  .geometric-circle {
+    @apply rounded-full;
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  /* Animated blob */
+  @keyframes blob-morph {
+    0%, 100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    25% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    50% {
+      border-radius: 50% 60% 30% 60% / 30% 40% 70% 60%;
+    }
+    75% {
+      border-radius: 60% 40% 60% 30% / 70% 50% 40% 60%;
+    }
+  }
+
+  .animate-blob {
+    animation: blob-morph 8s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
