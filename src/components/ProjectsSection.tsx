@@ -31,7 +31,7 @@ const projects: Project[] = [
       "Git workflows, het gebruiken van een framework met een team.",
     github: "https://github.com/HiddeBouwman/TLE2",
     image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+      "eekhorn.png",
   }
 ];
 
@@ -65,7 +65,7 @@ export function ProjectsSection() {
                     {/* Image */}
                     <div className="md:col-span-2 relative overflow-hidden">
                       <img
-                        src={project.image}
+                        src={`${import.meta.env.BASE_URL}${project.image}`}
                         alt={project.title}
                         className="w-full h-64 md:h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
